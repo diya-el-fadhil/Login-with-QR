@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Metropolis';
+    src: url('path/to/metropolis-regular.woff2') format('woff2'),
+         url('path/to/metropolis-regular.woff') format('woff');
+    /* Add additional font weights and styles if needed */
+}
+
+
+body {
+    font-family: 'Metropolis', sans-serif;
+    height: 100%;
+}
+
+html, body, .wrapper {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    min-width: 350px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 450px;
+}
+
+.left-pane, .right-pane {
+    flex: 1;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.left-pane {
+    background-color: #f0f0f0;
+    height: 100%;
+
+}
+
+.right-pane {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+    height: 100%;
+}
+
